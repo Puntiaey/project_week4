@@ -30,7 +30,6 @@ class RentForm(ModelForm):
 	class Meta:
 		model =  Rent
 		exclude=[]
-		
 	def __init__(self, *args, **kwargs):
 		super(RentForm, self).__init__(*args, **kwargs)
 		self.helper = FormHelper()
