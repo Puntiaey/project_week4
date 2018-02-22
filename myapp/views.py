@@ -14,15 +14,15 @@ def home(request):
 def creates(request):
 	return render(request, 'create.html')
 
-def list(request):
-	return render(request, 'list.html')
-
 class CreatePersonView(CreateView):
 	queryset = Person()
 	template_name='create.html'
 	form_class = PersonForm
 	success_url = '/admin'
 
+class ListPersonView(ListView):
+    model = Person	
+	
 class CarListView(ListView):
     model = Car
     template_name='car_list.html'
