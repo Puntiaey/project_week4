@@ -6,6 +6,7 @@ from .models import Car,Rent
 from .models import Person
 from .forms import PersonForm
 from .forms import CarForm
+from .forms import RentForm
 
 # Create your views here.
 
