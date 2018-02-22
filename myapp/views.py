@@ -27,6 +27,12 @@ class CreateCarView(CreateView):
 	form_class = CarForm
 	success_url = '/admin'
 
+class CreateRentView(CreateView):
+	queryset = Rent()
+	template_name='rentform.html'
+	form_class = RentForm
+	success_url = '/admin'
+
 class ListPersonView(ListView):
     model = Person
 
