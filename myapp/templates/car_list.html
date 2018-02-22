@@ -1,0 +1,16 @@
+{% block content %}
+
+<h1>Car_list</h1>
+
+
+   {% for c in object_list %}
+
+  <li>{{c.model}} , {{c.detail}} , {{c.price}}</li>
+
+{% empty %}
+
+	<p> Total cars is 0 . </p>
+
+{% endfor %}
+
+{% endblock %}
